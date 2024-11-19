@@ -1,9 +1,5 @@
 pipeline {
-	agent any 
-	envinorment {
-		DOCKER_TAG = getDockerTag()
-		ENV = dev
-	}
+	agent any
 	stages {
 		stage('checkout') {
 			steps {
@@ -15,7 +11,7 @@ pipeline {
 		}
 	}
 	stages {
-		stage('build'){
+		stage('build') {
 			steps{
 				sh "mvn clean package"
 		                // sh "docker build . -t  ${ENV}"
