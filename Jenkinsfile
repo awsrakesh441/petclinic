@@ -17,6 +17,7 @@ pipeline {
 		}
 		stage('Docker build image && push') {
 			steps {
+				echo "build"
 				//sh "docker login -u bskreddy18 -p ${DOCKER_HUB}"
 				//sh "docker push ${ENV}:latest"
 			}
