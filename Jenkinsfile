@@ -11,7 +11,7 @@ pipeline {
 		}
 		stage('build') {
 			steps {
-				sh "mvn clean package"
+				mvn clean package
 		                // sh "docker build . -t  ${ENV}"
 			}
 		}
