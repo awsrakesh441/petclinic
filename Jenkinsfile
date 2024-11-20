@@ -1,10 +1,10 @@
 pipeline {
 	agent any
-	environment {
+	//environment {
         // Define any environment variables if needed, for example, Maven or Java paths
-        MAVEN_HOME = 'C:\\Program Files\\apache-maven-3.9.9'  // Path to Maven installation
-        JAVA_HOME = 'C:\\Program Files\\Java\\jdk-17'  // Path to JDK installation
-        }
+        //MAVEN_HOME = 'C:\\Program Files\\apache-maven-3.9.9'  // Path to Maven installation
+        //JAVA_HOME = 'C:\\Program Files\\Java\\jdk-17'  // Path to JDK installation
+        //}
 	stages {
 		stage('checkout') {
 			steps {
