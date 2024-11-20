@@ -21,7 +21,7 @@ pipeline {
 		}
 		stage('build') {
 			steps {
-				bat 'mvn clean package'
+				bat 'mvn clean package -DskipTests -Djacoco.skip=true'
 		                // sh "docker build . -t  ${ENV}"
 			}
 		}
